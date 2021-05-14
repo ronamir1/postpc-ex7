@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideKeyBoard"
+    tools:context=".EditOrderActivity">
+
+    <TextView
+        android:id="@+id/editOrderHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Edit Your Order"
+        android:layout_marginTop="5dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/nameLinearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editOrderHead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/picklesLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/nameLinearView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/pickle" />
+
+        <NumberPicker
+            android:id="@+id/pickleNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_marginStart="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hummusLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/picklesLinearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/hummus" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/hummusCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tahiniLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/hummusLinearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/tahini" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/tahiniCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commentLinearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tahiniLinearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/commentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment: "
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:hint="Please enter any comment"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:onClick="cancelOnclick"
+        android:text="Cancel Order"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

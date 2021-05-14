@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581772500743",
+    "project_id": "sandwichorder-8d354",
+    "storage_bucket": "sandwichorder-8d354.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581772500743:android:becabd5d6d825708e96fa2",
+        "android_client_info": {
+          "package_name": "huji.postpc.y2021.sandwichorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581772500743-5husamfk33ic7sich0e7s5v5tvoo9lvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgLFjKZcekhlY_KTrL6vI5gl5qPZZaFBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581772500743-5husamfk33ic7sich0e7s5v5tvoo9lvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

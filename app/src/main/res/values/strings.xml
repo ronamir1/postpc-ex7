@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SandwichOrder</string>
+    <string name="preference_file_key">huji.postpc.y2021.sandwich_order_preference_file_key</string>
+</resources>
